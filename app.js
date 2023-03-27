@@ -16,8 +16,12 @@ app.use(
 app.set("views", `${__dirname}/views`);
 app.set("view engine", "ejs");
 
+
 //routes
 require("./routes/r-index")(app);
+app.use('/', (req, res) => {
+    res.render('index')
+})
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%-include('./partials/head.ejs')%>    
+	<link rel="stylesheet" href="/css/login.css" type="text/css">
+</head>
+<body>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-sm-12 col-12 p-0">
+                <div class="login-slide-img">
+                    <div class="login-img-absolute-box">
+                        <div class="login-img-main-heading"><span class="login-img-light-text">TaskMaster</span></div>
+                        <div class="blockCept-text">BlockCept.AI</div>
+                        <p>
+                            Introducing TaskMaster, the ultimate project management application designed to streamline your team's workflow. With TaskMaster, you can create customized boards to manage tasks, assign team members to specific tasks, and track progress in real-time. Our user-friendly interface allows for easy collaboration and communication, ensuring that your team is always on the same page. Stay organized and on schedule with TaskMaster's intuitive task management features, including due dates, priority levels, and file attachments. Say goodbye to inefficient workflows and hello to increased productivity with TaskMaster. Try it today and experience the power of streamlined project management..
+                        </p>
+                      </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 col-12">
+                <div class="card-login">
+                    <div class="card-body card-body-login">
+                        <div class="card-title text-right">
+                            <img src="images/Blockcept Logo (For Bright Background).png" class="m-t-20" width="50%">
+                          </div>
+                      <div class="card-title">
+                        <img src="/images/logo.png" class="m-t-20" width="50%">
+                      </div>
+                      <form class="login-form" action="/login" method="POST" id="formData">
+                        <h3 class="mb-1">Log In</h3>
+                          <div class="form-group">
+                            <label class="col-form-label">Email</label>
+                            <input type="email" class="form-control form-control-lg" data-error="#errEmail" id="email" name="email" required="" title="Email is required">
+                            <small id="emailHelp" class="form-text text-muted d-none">* Please Enter Valid Email.</small>
+                            <span class="text-danger fs-12" id="errEmail"></span>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-form-label">Password</label>
+                            <input type="password" class="form-control form-control-lg" data-error="#errPassword" id="password" name="password" required="">
+                            <span class="text-danger fs-12" id="errPassword"></span>
+                            <!--<span class="input-showpass-text">Show</span>-->
+                            <small id="emailHelp" class="form-text text-muted d-none">* Please Enter Valid Password.</small>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3 d-flex">
+                            <input type="checkbox" class="custom-control-input" id="checkbox_remember_me" name="remember_me" value="remember_me">
+                            <label class="custom-control-label" for="checkbox_remember_me">Remember Me</label>
+                            <a href="/forgot" class="ml-auto text-right fs-14">Forgot password?</a>
+                          </div>
+                          <button type="submit" class="btn btn-primary m-b-10">
+                            <span> SIGN IN</span>
+                          </button>
+                      </form>
+                    </div>
+                  </div>
+	</div>
+</div>
+</div>
+</body>
+</html>
