@@ -6,9 +6,6 @@ const db = require('./models')
 const { seedData } = require('./seeders/seedDB')
 require('dotenv').config({})
 
-// Passport Config
-require("./config/passport");
-
 // assets middleware
 app.use(express.static(__dirname + "/assets"));
 
@@ -18,6 +15,9 @@ app.use(
         extended: true
     })
 );
+
+// Passport Config
+require("./config/passport");
 
 // Enable session support
 app.use(session({
@@ -41,6 +41,8 @@ app.use('/', (req, res) => {
     return res.render('index')
 })
 
+
+// authenticate db connection
 db.sequelize.authenticate()
     .then(() => {
         console.log('Connection has been established successfully.');
@@ -49,7 +51,10 @@ db.sequelize.authenticate()
         console.error('Unable to connect to the database:', err);
     });
 
-db.sequelize.sync().then(() => seedData())
+//seed Data
+db.sequelize.sync({
+    force: false
+}).then(() => seedData())
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

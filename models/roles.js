@@ -2,10 +2,9 @@ const Sequelize = require('sequelize')
 const sequelize = require('./index').sequelize
 
 const roles = sequelize.define('roles', {
-    role: {
-        type: Sequelize.STRING,
-        allowNull: false
+    authority: {
+        type: Sequelize.ENUM('ROLE_SUPERADMIN', 'ROLE_ADMIN', 'ROLE_USER'),
+        allowNull: false,
     }
 })
-
 module.exports = roles
