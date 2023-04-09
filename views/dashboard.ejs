@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="/js/dashboard.js"> </script>
+    <link rel="stylesheet" href="/css/dashboard.css" type="text/CSS">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('./partials/header.ejs')%>
+
+        <%- include('./partials/sidebar.ejs')%>
+            <div class="page-wrapper">
+                <div class="container">
+                    <div class="page-breadcrumb">
+                        <div class="row">
+                            <div class="col d-flex no-block align-items-center">
+                                <h3 class="page-title">Dashboard</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 align-items-stretch">
+                                <div class="card shadow-card bg-danger-gradient">
+                                    <div class="card-body" id="hourly-progress">
+                                        <h4 class="card-tital">Personal Boards</h4>
+                                        <div id="content" style="">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                    <h4 class="card-tital" style="margin-top: 10px;"> 1</h4>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 align-items-stretch">
+                                <div class="card shadow-card bg-warning-gradient">
+                                    <div class="card-body" id="active-projects">
+                                        <h4 class="card-tital">Active Projects</h4>
+
+                                        <div id="content" style="">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                    <h4 class="card-tital" style="margin-top: 10px;">1
+                                                    </h4>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 align-items-stretch">
+                                <div class="card shadow-card bg-success-gradient ">
+                                    <div class="card-body" id="most-used-applications">
+                                        <h4 class="card-tital">Team Members</h4>
+                                        <div id="content" style="">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                    <h4 class="card-tital" style="margin-top: 10px;">1
+                                                    </h4>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 align-items-stretch">
+                                <div class="card shadow-card">
+                                    <div class="card-body">
+                                        <h4 class="card-tital">High Priority Tasks</h4>
+                                        <div class="ml-auto text-right">
+                                        </div>
+                                        <div id="DataTables_Table_0_wrapper"
+                                            class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6"></div>
+                                                <div class="col-sm-12 col-md-6"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table
+                                                        class="display table table-bordered table-striped dataTable no-footer"
+                                                        id="DataTables_Table_0" role="grid">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th width="10%" class="sorting_desc" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" aria-sort="descending"
+                                                                    aria-label="Date: activate to sort column ascending"
+                                                                    style="width: 100px;">Task Id</th>
+                                                                <th width="20%" class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Time: activate to sort column ascending"
+                                                                    style="width: 300px;">Title</th>
+                                                                <th width="20%" class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Project: activate to sort column ascending"
+                                                                    style="width: 250px;">Project</th>
+                                                                <th width="20%" class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Description: activate to sort column ascending"
+                                                                    style="width: 150px;">Status</th>
+                                                                <th width="20%" class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1"
+                                                                    aria-label="Description: activate to sort column ascending"
+                                                                    style="width: 150px;">Priority</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+                                                            <tr role="row" class="odd">
+                                                                <td data-sort="20230407" class="sorting_1">1
+                                                                </td>
+                                                                <td>Some Title</td>
+                                                                <td>Some Project</td>
+                                                                <td>In-Progress</td>
+                                                                <td> Highest</td>
+                                                            </tr>
+                                                            <tr role="row" class="odd">
+                                                                <td data-sort="20230407" class="sorting_1">2
+                                                                </td>
+                                                                <td>Some Title</td>
+                                                                <td>Some Project</td>
+                                                                <td>In-Progress</td>
+                                                                <td> High</td>
+                                                            </tr>
+
+                                                            <tr role="row" class="odd">
+                                                                <td data-sort="20230407" class="sorting_1">3
+                                                                </td>
+                                                                <td>Some Title</td>
+                                                                <td>Some Project</td>
+                                                                <td>QA</td>
+                                                                <td> High</td>
+                                                            </tr>
+
+                                                            <tr role="row" class="odd">
+                                                                <td data-sort="20230407" class="sorting_1">4
+                                                                </td>
+                                                                <td>Some Title</td>
+                                                                <td>Some Project</td>
+                                                                <td>Sprint Backlog</td>
+                                                                <td> Medium</td>
+                                                            </tr>
+
+                                                            <tr role="row" class="odd">
+                                                                <td data-sort="20230407" class="sorting_1">5
+                                                                </td>
+                                                                <td>Some Title</td>
+                                                                <td>Some Project</td>
+                                                                <td>Sprint Backlog</td>
+                                                                <td>Medium</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-5"></div>
+                                                <div class="col-sm-12 col-md-7"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>

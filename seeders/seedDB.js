@@ -17,6 +17,7 @@ async function seedData() {
     }
 
     const findAdminRole = await roles.findOne({ authority: "ROLE_SUPERADMIN" });
+    const findRole = await roles.findOne({ authority: "ROLE_ADMIN" });
 
     const findFirstUser = await user.findOne({ email: 'ayushsahu@gmail.com' })
     if (!findFirstUser) {
@@ -26,7 +27,14 @@ async function seedData() {
             email: 'ayushsahu@gmail.com',
             password: hashPassword('password'),
             roleId: findAdminRole.id
-        })
+        },
+            {
+                firstName: 'xyz',
+                lastName: 'ssss',
+                email: 'ayushsahu767@gmail.com',
+                password: hashPassword('password'),
+                roleId: findRole.id
+            })
     }
 
 

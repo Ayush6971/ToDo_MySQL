@@ -4,7 +4,7 @@ let id = 0
 
 const index = (req, res) => {
     try {
-        return res.render('ToDo')
+        return res.render('dashboard')
     } catch (error) {
         console.error(error)
     }

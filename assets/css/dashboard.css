@@ -1,0 +1,65 @@
+.container {
+    margin-left: 200px !important;
+}
+
+.page-breadcrumb {
+    margin: 30px 20px 0 20px;
+}
+
+.page-breadcrumb .page-title {
+    margin-bottom: 0px;
+}
+
+.page-breadcrumb .breadcrumb {
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    font-size: 13px;
+}
+
+.page-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    content: "\e649";
+    font-family: themify;
+    color: #ced4da;
+    font-size: 11px;
+}
+
+.page-wrapper>.container-fluid {
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+}
+
+.page-wrapper .container-fluid {
+    margin-top: 20px !important;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap !important;
+    margin-right: -10px !important;
+    margin-left: -10px !important;
+}
+
+.bg-danger-gradient {
+    background-image: linear-gradient(45deg, #f93a5a, #f7778c) !important;
+    color: #fff;
+}
+
+.bg-warning-gradient {
+    background-image: linear-gradient(to left, #efa65f, #f76a2d) !important;
+    color: #fff;
+}
+
+.bg-success-gradient {
+    background-image: linear-gradient(to left, #48d6a8 0%, #029666 100%) !important;
+    color: #fff;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

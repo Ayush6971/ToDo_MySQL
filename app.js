@@ -52,9 +52,7 @@ db.sequelize.authenticate()
     });
 
 //seed Data
-db.sequelize.sync({
-    force: false
-}).then(() => seedData())
+db.sequelize.sync().then(() => seedData())
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
